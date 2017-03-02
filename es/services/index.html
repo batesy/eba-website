@@ -1,0 +1,36 @@
+---
+layout: spanish
+section_id: services
+---
+
+
+<div class='full' id="services-description">
+  <div class='row'>
+    <div class='large-12 columns'>
+      <!-- <h4 style='color: #999'>We focus on</h4> -->
+      <h2>Servicios</h2>
+      <div class='spacing'></div>
+      <p>
+        English Business Academy es una institución académica especializada en proporcionar las habilidades necesarias para comunicarse e interconectarse en el idioma inglés. Con la  globalización en pleno  nunca ha sido tan importante el aprender el idioma más hablado en el mundo de los negocios internacionales. En EBA, a través de una variedad de cursos y servicios, prepararemos a ti y a tu empresa a comunicarse en inglés de una manera exitosa. EBA logra un acercamiento personalizado con las clases para asegurar que tengas el servicio que mejor se ajusta a ti, tu nivel y tus necesidades. Ofrecemos tanto clases individuales como en grupos. Además, en EBA, vamos a ti! No hay la necesidad de perder tiempo en traslados ya que nuestros profesores van a tu lugar de trabajo de acuerdo con tu itinerario.
+      </p>
+      <div><a href="/eba/es/contact" class="button">Contáctenos</a></div>
+    </div>
+  </div>
+  <div class='three spacing'></div>
+</div>
+<div class='full' style='background: #f5f5f5' id="services-grid">
+  <div class='row'>
+    <div class='small-block-grid-2 medium-block-grid-3 boxes'>
+      {% for service in site.data.services-es %}
+        <li>
+        <div class='box' style='background: #f9f9f9;'>
+          <i class='{{service.icon_class}}'></i>
+          <h4>{{service.title}}</h4>
+          <p>{{service.text}}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

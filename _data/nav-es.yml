@@ -1,0 +1,12 @@
+- name: Home
+  path: es/
+  section_id: home
+- name: Acerca de nosotros
+  path: es/about
+  section_id: about
+- name: Servicios
+  path: es/services
+  section_id: services
+- name: Contactos
+  path: es/contact
+  section_id: contact

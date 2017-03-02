@@ -1,0 +1,65 @@
+---
+layout: default
+section_id: services
+services:
+  - icon_class: fa fa-book
+    title: "By The Book Classes"
+    text:
+      "These are classes in which students are guided through a structured curriculum of National Geographic’s World Link learning series. World Link is National Geographic’s best-selling series for adult learners of English. Combining dynamic vocabulary with essential grammar and universal topics, World Link, helps learners to communicate confidently and fluently."
+  - icon_class: fa fa-comments
+    title: Conversation Classes
+    text:
+      "These are classes in which our teachers prepare discussions and activities geared towards life in the business world. The primary aim of these classes is to improve conversational skills as well as the student’s confidence in conversing. Lessons will focus on pronunciation, fluency, and everyday expressions and colloquial English. These classes are focused on helping learners speak more like a native."
+  - icon_class: fa fa-user
+    title: "Personalized Classes"
+    text:
+      "These are classes in which teachers prepare lessons specific to your field of work. Lessons will focus on grammar, conversation and vocabulary particular to your business needs in order to help you communicate flawlessly with your international clientele."
+  - icon_class: fa fa-language
+    title: "Translation Services"
+    text:
+      "At EBA we have professional translators at your disposal to translate any documents you require in English. Our team of translators will ensure that your documents are translated correctly using an English that best suits your needs and your clientele. These services are available for everything from one-page menus to 100-page business reports."
+  - icon_class: fa fa-search
+    title: "Proofreading Services"
+    text:
+      "EBA also offers services in reviewing draft documents. Our team of English experts will proofread and revise your documents to ensure that they are to the business standards of a native speaker. This service is available for everything from simple emails to presentations to 100 – page documents."
+  - icon_class: fa fa-group
+    title: "Out of Class Events"
+    text:
+      "At EBA we offer our students the chance to put their English into use in various out-of-class social events. We want you to use the English you have learned with us in a fun and social way! As such, we organize events that not only give you the chance to practice your English, but also to network with other EBA students. These events include; sports days, movie nights, inter-cambios, trivia nights, casual drinks and more. These are open to all EBA students!"
+  - icon_class: fa fa-group
+    title: "Consulting Services"
+    text:
+      "If building an international client base, interacting with clients abroad or in multiple languages is of importance for your business, EBA has well over a decade of business experience and can make sure that your promotional documents reach your desired demographics in English!"
+---
+
+
+<div class='full' id="services-description">
+  <div class='row'>
+    <div class='large-12 columns'>
+      <!-- <h4 style='color: #999'>We focus on</h4> -->
+      <h2>Our Services</h2>
+      <div class='spacing'></div>
+      <p>English Business Academy is an educational institution that specializes in providing you and your business with the skills needed to successfully communicate and connect in English. With the ongoing globalization of our world, it has never been more important to learn the world’s most international language.</p>
+      <p>At EBA, through a variety of courses and services, we will prepare you and your company to successfully communicate in English. EBA takes a personalized approach with our classes to ensure that you are getting a service that best suits you, your level and your needs.</p>
+      <p>We offer one-on- one courses as well as group courses. Furthermore, at EBA, we come to you! There is no need to waste time commuting to class because our teachers go to your business on your schedule.</p>
+      <div><a href="/eba/contact" class="button">Contact Us</a></div>
+    </div>
+  </div>
+  <div class='three spacing'></div>
+</div>
+<div class='full' style='background: #f5f5f5' id="services-grid">
+  <div class='row'>
+    <div class='small-block-grid-2 medium-block-grid-3 boxes'>
+      {% for service in page.services %}
+        <li>
+        <div class='box' style='background: #f9f9f9;'>
+          <i class='{{service.icon_class}}'></i>
+          <h4>{{service.title}}</h4>
+          <p>{{service.text}}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
