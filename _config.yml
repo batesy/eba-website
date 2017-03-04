@@ -4,7 +4,7 @@ email: info@englishbusinessacademy.com
 description: > # this means to ignore newlines until "baseurl:"
   English Business Academy is the Madrid's premier english school for businesses, entrepreneurs, and hotels.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://batesy.github.io/eba-website" # the base hostname & protocol for your site
+url: "https://www.englishbusinessacademy.com" # the base hostname & protocol for your site
 twitter_username: EnglishBusinessAcademy
 github_username:
 
